@@ -1,5 +1,5 @@
 <?php
-require_once "conn.php";
+require_once "../conn/conn.php";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $username = trim($_REQUEST['username']);

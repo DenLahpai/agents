@@ -1,5 +1,5 @@
 <?php
-require "conn.php";
+require_once "../conn/conn.php";
 ?>
 <html>
 	 <head>
