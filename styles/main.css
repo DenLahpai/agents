@@ -104,11 +104,10 @@ main ul li a {
 }
 
 main ul li input[type=checkbox] {
-    margin: 12px; 
+    margin: 12px;
 }
 
 main ul li select {
-    font-size: 120%;
     padding: 6px;
 }
 
