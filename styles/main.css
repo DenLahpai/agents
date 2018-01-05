@@ -45,6 +45,7 @@ footer {
 
 nav {
     background: black;
+    border-radius: 12px;
 }
 
 nav ul {
@@ -54,8 +55,7 @@ nav ul {
 
 nav h4 {
     text-align: center;
-    font-size: 240%;
-    padding: 36px;
+    padding: 12px;
     border: 1px solid black;
     color: white;
 }
@@ -63,12 +63,11 @@ nav h4 {
 nav ul li {
     text-align: center;
     border: 1px solid black;
-    padding: 30px;
+    padding: 12px;
 }
 
 nav ul li a {
     padding: 6px;
-    font-size: 240%;
     text-decoration: none;
     display: block;
     color: white;
@@ -96,22 +95,16 @@ main {
 
 main ul li {
     text-align: center;
-    padding: 36px;
+    padding: 12px;
     list-style: none;
-    font-size: 180%;
 }
 
 main ul li a {
     color: #ffffff;
 }
 
-main ul li input {
-    font-size: 120%;
-}
-
 main ul li input[type=checkbox] {
-   transform: scale(2.4);
-   margin: 12px;
+    margin: 12px;
 }
 
 main ul li select {
@@ -126,7 +119,6 @@ aside button {
 }
 
 button {
-    font-size: 180%;
     padding: 12px 24px;
     background: black;
     color: #ffffff;
@@ -135,7 +127,6 @@ button {
 
 .error {
     color: red;
-    font-size: 120%;
 }
 
 footer p {

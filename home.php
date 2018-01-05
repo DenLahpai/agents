@@ -5,14 +5,14 @@ require "conn.php";
 	 <head>
         <?php
 		$headTitle = "Home";
-		include "head.html";
+		include "includes/head.html";
 		?>
     </head>
 	<body>
 		<div class="content"><!-- content -->
-			<?php include "nav.html";
+			<?php include "includes/nav.html";
 			$pageTitle = "Create New Booking";
-			include "header.html";
+			include "includes/header.html";
 			?>
 			<main>
 				<form action="bfooking_details.php" method="post">
@@ -51,7 +51,7 @@ require "conn.php";
 					</ul>
 				</form>
 			</main>
-			<?php include "footer.html"; ?>
+			<?php include "includes/footer.html"; ?>
 		</div><!-- end of main -->
 	</body>
 </html>

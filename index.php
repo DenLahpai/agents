@@ -6,14 +6,14 @@ session_start();
     <head>
        <?php
        $headTitle = "Login";
-       include "head.html";
+       include "includes/head.html";
        ?>
     </head>
     <body>
         <div class="content"><!-- content -->
             <?php
             $pageTitle = "Welcome";
-            include "header.html";
+            include "includes/header.html";
             ?>
             <main>
                 <form action="login.php" method="post">
