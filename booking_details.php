@@ -1,5 +1,5 @@
 <?php
-require "conn.php";
+require "../conn/conn.php";
 
 $visitDate = $_REQUEST['visitDate'];
 $pax = $_REQUEST['pax'];
@@ -34,7 +34,7 @@ else {
     <head>
         <?php
         $headTitle = "Booking Details";
-        include "head.html";
+        include "includes/head.html";
         ?>
         <style media="screen">
             main {
@@ -116,15 +116,15 @@ else {
         ?>
         <form class="" action="index.html" method="post">
             <div class="content"><!-- content -->
-                <?php include "nav.html";
+                <?php include "includes/nav.html";
                 $pageTitle = "Booking Details";
-                include "header.html";
+                include "includes/header.html";
                 ?>
                 <main>
                 <?php
                 $i = 1;
                 while ($i <= $pax) {
-                    include "visitorsForms.php";
+                    include "includes/visitorsForms.php";
                     $i++;
                 }
                 ?>

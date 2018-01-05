@@ -9,6 +9,10 @@ require_once "../conn/conn.php";
 		?>
     </head>
 	<body>
+		<?php
+		$data = new Database();
+		var_dump($data);
+		?>
 		<div class="content"><!-- content -->
 			<?php include "includes/nav.html";
 			$pageTitle = "Create New Booking";
