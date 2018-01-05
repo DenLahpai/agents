@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "helvetica";
+}
+
+.content {
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-areas:
+    " nav nav nav "
+    " header header header "
+    " main main main "
+    " section section section "
+    " aside aside aside "
+    " footer footer footer "
+    ;
+}
+
+nav {
+    grid-area: nav;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+section {
+    grid-area: section;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+nav {
+    background: black;
+}
+
+nav ul {
+    display: none;
+    color: white;
+}
+
+nav h4 {
+    text-align: center;
+    font-size: 240%;
+    padding: 36px;
+    border: 1px solid black;
+    color: white;
+}
+
+nav ul li {
+    text-align: center;
+    border: 1px solid black;
+    padding: 30px;
+}
+
+nav ul li a {
+    padding: 6px;
+    font-size: 240%;
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+header {
+    background: silver;
+}
+
+header img {
+    display: block;
+    width: 76px;
+	height: 66px;
+	margin: 0px auto;
+}
+
+header h1 {
+    text-align: center;
+    padding: 12px;
+}
+
+main {
+    justify-content: center;
+}
+
+main ul li {
+    text-align: center;
+    padding: 36px;
+    list-style: none;
+    font-size: 180%;
+}
+
+main ul li a {
+    color: #ffffff;
+}
+
+main ul li input {
+    font-size: 120%;
+}
+
+main ul li input[type=checkbox] {
+   transform: scale(2.4);
+   margin: 12px;
+}
+
+main ul li select {
+    font-size: 120%;
+    padding: 6px;
+}
+
+aside button {
+    display: block;
+    margin: 12px auto;
+    text-align: center;
+}
+
+button {
+    font-size: 180%;
+    padding: 12px 24px;
+    background: black;
+    color: #ffffff;
+    border-radius: 12px;
+}
+
+.error {
+    color: red;
+    font-size: 120%;
+}
+
+footer p {
+    padding: 12px;
+    text-align: center;
+}
+
+.mini ul li {
+    padding: 6px;
+}
+
+.list_title {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/*styles for tablets*/
+@media screen and (min-width: 992px) {
+    .content {
+        grid-template-columns: repeat(3 , 1fr);
+        grid-template-areas:
+        " header header header "
+        " nav nav nav "
+        " main main main "
+        " section section section "
+        " aside aside aside "
+        " footer footer footer "
+        ;
+    }
+
+    nav h4 {
+        display: none;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        display: inline-block;
+        padding: 6px;
+        border: none;
+    }
+
+    nav ul li a:hover {
+        color: -webkit-link;
+        text-decoration: underline;
+        background: silver;
+        border-radius: 24px;
+    }
+}
